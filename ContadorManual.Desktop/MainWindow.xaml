@@ -11,41 +11,39 @@
                BorderBrush="LightGray"
                BorderThickness="2">
             <StackPanel>
-                <Label Content="conteo:"></Label>
+                <Label Content="conteo:"/>
                 <Label Content="0"
                        Margin="8"
                        FontSize="18"
-                       HorizontalAlignment="Center"></Label>
+                       HorizontalAlignment="Center"
+                       x:Name="conteoLabel"/>
                 <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
 
                     <Button Content="Contar"
                             Margin="4"
                             Padding="0,2"
                             MinWidth="60"
-                    ></Button>
+                            x:Name="contarButton"
+                            Click="contarButton_Click"
+                    />
                     <Button Content="Reiniciar"
                             Margin="4"
                             Padding="0,2"
                             MinWidth="60"
-                    ></Button>
-
-
-
-
+                            x:Name="reiniciarButton"
+                            Click="reiniciarButton_Click"
+                    />
                 </StackPanel>
             </StackPanel>
-
-
-
-
-
 
         </Border>
         <Button Content="Salir"
                  Margin="16,0"
                  HorizontalAlignment="Right"          
                  MinWidth="60"
-                    ></Button>
+                x:Name="salirButton"
+                Click="salirButton_Click"
+                    />
 
 
 
